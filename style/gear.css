@@ -54,9 +54,61 @@ li a{
     padding: 20px 0px;
     box-shadow: 0.2px 0.5px 2px 0.1px gray;
     border-radius: 10px;
+    cursor: pointer;
 }
 .banner-logo img{
     width: 70%;
+}
+
+/* Main Starts here */
+
+.card h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.card-items {
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);     
+    border-radius: 5px;
+    cursor: pointer;
+    width: 275px;
+    height: 390px;
+}
+.card-items img{
+    width: 100%;
+    height: auto;
+}
+.card-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-price{
+    margin:0;
+}
+.card-details{
+    margin:5px 0;
+}
+
+.card-container{
+position:relative;
+}
+.card-more {
+    position: absolute;
+    bottom: -85px;
+    right: 2%; 
+    color: hotpink;
+    cursor: pointer;
+    padding: 20px;
 }
 
 @media screen and (max-width:576px) {
