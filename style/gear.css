@@ -181,6 +181,14 @@ position:relative;
         gap: 20px;
         padding-left: 40px;
     }
+
+    .card-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 15px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:1096px) {
@@ -245,5 +253,11 @@ position:relative;
         align-items: center;
         justify-content: center;
         background-size: 85%;
+    }
+
+    .card-container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
     }
 }
